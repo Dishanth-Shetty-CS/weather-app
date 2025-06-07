@@ -1,0 +1,169 @@
+/* Applying CSS for the "body" tag to change its bgcolor,font-style,position,alignments,margin and its height etc. */
+body {
+    font-family: 'Poppins';
+    background-color: #53A1F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('weather-app-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Applying CSS for the "app" id to change its alignment,bgcolor,shadows and its width etc. */
+#app {
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px black;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Applying CSS for "h1" tag to change its color and margin from bottom  */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Applying CSS for "input-container" class to change its position and margin from bottom etc. */
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Applying CSS for the "input" field to change its padding,font-style,border,text-size etc. */
+input {
+    padding: 10px;
+    font-family: 'Poppins';
+    border-radius: 5px;
+    border: 2px solid #CCC;
+    font-size: 16px;
+    margin-right: 10px;
+    flex: 1;
+    outline: none;
+}
+
+/* Applying CSS for "input" field when it "focus" the border of the input will be changes to blue */
+input:focus {
+    border: 2px solid #69A7EA;
+    transition: 0.6s ease-in-out;
+}
+
+/* Applying CSS for "button" element to change its padding,bgcolor,text-size and transition for smoothen behaviors etc. */
+button {
+    padding: 16px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0456ad;
+    color: #FFFFFF;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Appying CSS for the "button" element when its hover the bgcolor of the button changes to blue */
+button:hover {
+    background-color: #007BFF;
+}
+
+/* Applying CSS for "error" id to change its padding from right,color and its text-size */
+#error {
+    color: red;
+    padding-right: 240px;
+    font-size: 15px;
+}
+
+/* Appying CSS for "weatherResult" id to change its padding from right,color and text-size */
+#weatherResult {
+    color: #333;
+    padding-right: 180px;
+    font-size: 15px;
+}
+
+/* Applying CSS for "weatherData" id to change its padding from right, color and text-size */
+#weatherData {
+    color: red;
+    padding-right: 180px;
+    font-size: 15px;
+}
+
+/* Applying CSS for "weather_info" class to changes its line-height and position of the text */
+.weather_info {
+    line-height: 25px;
+    text-align: left;
+}
+
+/* Applying CSS for "cloudicon" id to change its position from left and right, width and its shadow,
+means shadow is applied to only the icon of the cloud not for the image. */
+#cloudicon {
+    position: absolute;
+    left: 735px;
+    top: 320px;
+    width: 250px;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+/* Applying CSS for "@media" queries to make the webpage responsive and applicable to all the screen sizes upto - 768px */
+@media (max-width: 768px) {
+
+    /* Applying CSS for "body" tag to change its height, padding and bg-image*/
+    body {
+        height: auto;
+        padding: 20px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Applying CSS for "app" id change its width and padding */
+    #app {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Applying CSS for "input-container" class to change its direction and gap in-between */
+    .input-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Applying CSS for "input" field to change its width,margin from right and its text-size */
+    input {
+        flex: 1 1 100%;
+        min-width: 66px;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    /* Applying CSS for "button" element to change its width,padding and text-size */
+    button {
+        min-width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Applying CSS for "cloudicon" id to change its position,width,margins and how it should be displayed etc. */
+    #cloudicon {
+        position: static;
+        width: 100px;
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    /* Applying CSS for "weatherResult","error","weatherData" id's to change its padding from right,text-sizes and alignments */
+    #weatherResult,
+    #error,
+    #weatherData {
+        padding-right: 0;
+        font-size: 16px;
+        text-align: center;
+    }
+}

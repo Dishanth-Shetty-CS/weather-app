@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External CSS file to change the appearance of the webpage -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google font - Poppins font link for the h1 tag-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Favicon means tab icon  -->
+    <link rel="shortcut icon" href="cloudy.png" type="image/x-icon">
+    <!-- Title for the web page -->
+    <title>Weather Application – Real-Time Forecast & Updates</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- Weather App title -->
+        <h1>Weather Application</h1>
+        <!-- City input-container -->
+        <div class="input-container">
+            <!-- City input text  -->
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <!-- weather fetching button -->
+            <button id="fetchWeather">Fetch</button>
+        </div>
+        <!-- Weather data will be display here-->
+        <div id="weatherData"></div>
+        <!-- Weather result will be display here-->
+        <div id="weatherResult"></div>
+        <!-- Error will be display here-->
+        <p id="error"></p>
+        <!-- External JavaScript file for behaviour of the webpage -->
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
