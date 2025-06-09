@@ -29,5 +29,4 @@ This will open the website in your browser. Make sure that the Live Server exten
 
 **Step 9:** If the city name is blank or incorrect, an error message will appear.
 
-**Please Note:** The application fetches real-time weather data from the OpenWeatherMap API. Make sure you have an internet connection.  
-It may take a few seconds to load the data, so please be patient.
+**Please Note:** The application fetches real-time weather data from the OpenWeatherMap API. Make sure you have an internet connection. It may take a few seconds to load the data, so please be patient.
