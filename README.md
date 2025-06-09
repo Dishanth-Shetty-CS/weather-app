@@ -1,4 +1,4 @@
-# weather-app
+# Weather App Instructions
 
 **Step 1:** Unzip the folder.
 
